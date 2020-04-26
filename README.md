@@ -10,7 +10,7 @@ pip install -r requirements.txt
 # How to run
 
 ```bash
-python index.py
+python main.py
 ```
 
 # Overview
