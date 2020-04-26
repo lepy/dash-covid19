@@ -16,7 +16,7 @@ app.layout = html.Div([
               [Input('url', 'pathname')])
 def display_page(pathname):
     if pathname == '/':
-        return covid19.geo_layout
+        return covid19.layout
     else:
         print(pathname)
         return '404'

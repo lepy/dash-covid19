@@ -4,7 +4,7 @@ import dash_core_components as dcc
 
 def template(template_name: str, dropdown_menu):
     return html.Div([
-        html.H2('WWWID LiveCamp 2020', 
+        html.H2('An Example Dash App', 
                     style={"display": "inline",
                         'font-size': '3.65em',
                         'margin-left': '7px',
@@ -14,7 +14,7 @@ def template(template_name: str, dropdown_menu):
                         'margin-top': '20px',
                         'margin-bottom': '0',
                             }),
-                    html.Img(src="https://avatars2.githubusercontent.com/u/36051466",
+                    html.Img(src="https://avatars2.githubusercontent.com/u/20743732",
                     style={
                         'height': '100px',
                         'float': 'right',

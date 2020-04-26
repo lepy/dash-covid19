@@ -15,11 +15,10 @@ dropdown_menu = dcc.Dropdown(id='data-input-' + APPS_NAME,
                             value=['data-harian-dunia'],
                             multi=True)
 
-geo_layout = template.template(APPS_NAME, dropdown_menu) 
+layout = template.template(APPS_NAME, dropdown_menu) 
 
 def covid19(value_name: str):
     data_1 = go.Scatter(x=df['reportDate'], y=df['totalConfirmed'], name="Total Confirmed", mode="lines+markers")
-    print(data_1)
     data = [data_1]
     layout = dict(title='Total Positif Covid 19 di Seluruh Dunia',
                 xaxis=dict(title='Hari'),
