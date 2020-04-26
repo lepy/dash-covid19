@@ -15,4 +15,5 @@ RUN pip install -r /opt/requirements.txt --ignore-installed
 WORKDIR $PROJECT_ROOT
 
 EXPOSE 8051
-ENTRYPOINT python index.py
+
+ENTRYPOINT python main.py
