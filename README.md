@@ -7,7 +7,7 @@ An example for Dash Application
 pip install -r requirements.txt
 ```
 
-# How to install
+# How to run
 
 ```bash
 python index.py
