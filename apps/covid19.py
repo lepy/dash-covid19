@@ -4,7 +4,7 @@ from dash.dependencies import Input, Output
 import pandas as pd 
 
 from apps import template
-from apps.app import app
+from apps.app import dash_app
 
 APPS_NAME = 'covid19'
 df = pd.read_json('https://covid19.mathdro.id/api/daily')
@@ -30,7 +30,7 @@ def covid19(value_name: str):
         figure=fig,
     )
 
-@app.callback(
+@dash_app.callback(
     Output('graphs-' + APPS_NAME, 'children'),
     [Input('data-input-' + APPS_NAME, 'value')],
 )

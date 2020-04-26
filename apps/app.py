@@ -1,6 +1,6 @@
 import dash
 
-app = dash.Dash(
+dash_app = dash.Dash(
         "An Example for Dash Apps",
         external_stylesheets=[
             "https://fonts.googleapis.com/css?family=Product+Sans:400,400i,700,700i",
@@ -9,5 +9,4 @@ app = dash.Dash(
             ]
         )
 
-server = app.server
-app.config.suppress_callback_exceptions = True
+dash_app.config.suppress_callback_exceptions = True

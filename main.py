@@ -2,16 +2,17 @@ import dash_core_components as dcc
 import dash_html_components as html
 from dash.dependencies import Input, Output
 
-from apps.app import app 
+from apps.app import dash_app
 from apps import covid19
 
-app.layout = html.Div([
+dash_app.layout = html.Div([
     dcc.Location(id='url', refresh=False),
     html.Div(id='page-content')
 ])
 
+app = dash_app.server
 
-@app.callback(Output('page-content', 'children'),
+@dash_app.callback(Output('page-content', 'children'),
               [Input('url', 'pathname')])
 def display_page(pathname):
     if pathname == '/':
@@ -23,5 +24,5 @@ def display_page(pathname):
 
 
 if __name__ == '__main__':
-    app.run_server(host='0.0.0.0', debug=True, port=8080)
+    dash_app.run_server(host='0.0.0.0', debug=True, port=8080)
 
