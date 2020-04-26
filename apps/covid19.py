@@ -4,7 +4,7 @@ from dash.dependencies import Input, Output
 import pandas as pd 
 
 from apps import template
-from app import app
+from apps.app import app
 
 APPS_NAME = 'covid19'
 df = pd.read_json('https://covid19.mathdro.id/api/daily')

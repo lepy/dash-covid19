@@ -8,7 +8,6 @@ app = dash.Dash(
             "https://codepen.io/bcd/pen/KQrXdb.css"
             ]
         )
+
 server = app.server
 app.config.suppress_callback_exceptions = True
-
-
